@@ -1,6 +1,6 @@
 'use client';
 import {useCallback,useEffect,useMemo,useState} from 'react';
-import {PageShell} from '../components';
+import {Shell} from '../components';
 import {apiJson} from '../../lib/site';
 
 const metricLabels={
@@ -108,9 +108,9 @@ export default function AdminPage(){
     setSelected(null);
   }
 
-  if(loading)return <PageShell><main className="adminPage"><div className="wrap"><p className="lead">Loading admin console…</p></div></main></PageShell>;
+  if(loading)return <Shell><main className="adminPage"><div className="wrap"><p className="lead">Loading admin console…</p></div></main></Shell>;
 
-  return <PageShell><main className="adminPage"><div className="wrap">
+  return <Shell><main className="adminPage"><div className="wrap">
     <div className="adminHeader">
       <div><div className="eyebrow">DISPUTE ADMIN</div><h1>Accounts, trials and analytics</h1><p className="lead">30-day verified-email trial. Account changes require a reason and are audit logged.</p></div>
       <button className="btn" onClick={()=>void refresh()}>Refresh</button>
@@ -193,7 +193,7 @@ export default function AdminPage(){
         <button className="btn danger" onClick={()=>void deleteUser()}>Permanently delete account</button>
       </div>
     </section>:null}
-  </div></main></PageShell>
+  </div></main></Shell>
 }
 
 function fmt(value){
