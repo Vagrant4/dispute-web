@@ -1,0 +1,1 @@
+export const metadata={title:'Sign in',robots:{index:false,follow:false},alternates:{canonical:'https://disputewho.com/login'}};export default function L({children}){return children}

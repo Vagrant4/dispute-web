@@ -1,0 +1,1 @@
+export default function robots(){return {rules:{userAgent:'*',allow:'/',disallow:['/account','/login','/signup','/verify-email','/api/']},sitemap:'https://disputewho.com/sitemap.xml'}}

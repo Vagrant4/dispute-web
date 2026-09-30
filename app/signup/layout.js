@@ -1,0 +1,1 @@
+export const metadata={title:'Create account',robots:{index:false,follow:false},alternates:{canonical:'https://disputewho.com/signup'}};export default function L({children}){return children}
