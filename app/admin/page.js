@@ -71,7 +71,7 @@ export default function AdminPage(){
       <div className="adminPanel">
         <h2>Full account management</h2>
         <p className="lead">User search, suspend/unsuspend, trial controls, deletion and audit log remain available on the protected backend console.</p>
-        <a className="btn primary" href="https://dispute-api-live.onrender.com/admin">Open full admin console</a>
+        <a className="btn primary" href="/api/dispute/admin">Open full admin console</a>
       </div>
     </div>
   </main>
