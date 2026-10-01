@@ -1,5 +1,1 @@
-export const metadata={
-  title:'Admin Console | DISPUTE',
-  robots:{index:false,follow:false}
-};
-export default function AdminLayout({children}){return children}
+export const metadata={title:'Administrator',robots:{index:false,follow:false},alternates:{canonical:'https://disputewho.com/admin'}};export default function Layout({children}){return children}
