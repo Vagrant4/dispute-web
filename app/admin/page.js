@@ -26,7 +26,7 @@ export default function AdminPage(){
     e.preventDefault();
     setBusy(true); setError('');
     try{
-      await apiJson('/auth/login',{method:'POST',body:JSON.stringify({email,password})});
+      await apiJson('/admin/login',{method:'POST',body:JSON.stringify({email,password})});
       const d=await apiJson('/admin/metrics');
       setMetrics(d.metrics||null);
       setSignedIn(true);
@@ -46,7 +46,7 @@ export default function AdminPage(){
       <form className="authbox adminAuthBox" onSubmit={login}>
         <div className="eyebrow">DISPUTE ADMIN</div>
         <h1>Administrator sign in</h1>
-        <p className="lead">Authorized administrator access only.</p>
+        <p className="lead">Authorized administrator access only. Email verification codes are not required for admin sign-in.</p>
         <label>Email<input required type="email" value={email} onChange={e=>setEmail(e.target.value)}/></label>
         <label>Password<input required type="password" minLength="8" value={password} onChange={e=>setPassword(e.target.value)}/></label>
         {error&&<p className="error">{error}</p>}
