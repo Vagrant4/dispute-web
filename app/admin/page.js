@@ -68,11 +68,23 @@ export default function AdminPage(){
         <div className="adminMetric"><span>Trialing</span><b>{metrics.trialingSubscriptions??'—'}</b></div>
         <div className="adminMetric"><span>Active subscriptions</span><b>{metrics.activeSubscriptions??'—'}</b></div>
       </div>}
-      <div className="adminPanel">
-        <h2>Full account management</h2>
-        <p className="lead">User search, suspend/unsuspend, trial controls, deletion and audit log remain available on the protected backend console.</p>
-        <a className="btn primary" href="/api/dispute/admin">Open full admin console</a>
-      </div>
+      <section className="adminPanel" aria-labelledby="account-controls-title">
+        <div className="adminPanelHead">
+          <div>
+            <h2 id="account-controls-title">Find and manage one account</h2>
+            <p>Search for a user, open their account details, then choose <b>Reset 30-day trial</b> if needed.</p>
+          </div>
+          <a className="btn primary" href="/api/dispute/admin" target="_blank" rel="noreferrer">Open full-screen account manager</a>
+        </div>
+        <p className="adminSubline">A trial reset applies only to the selected account. It does not delete the account or erase the user’s work records.</p>
+        <iframe
+          title="DISPUTE account search and trial controls"
+          src="/api/dispute/admin"
+          loading="eager"
+          referrerPolicy="same-origin"
+          style={{display:'block',width:'100%',minHeight:'1100px',border:'1px solid #273229',borderRadius:'16px',background:'#050806'}}
+        />
+      </section>
     </div>
   </main>
 }
