@@ -13,7 +13,7 @@ export function Header(){return <header className="nav"><div className="wrap nav
 </div></header>}
 export function Footer(){return <footer><div className="wrap foot">
   <div><b>DISPUTE</b><p>Documentation and personal reconciliation software.</p></div>
-  <div className="footlinks"><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/contact">Support</Link><Link href="/work-hours-pay-records-checklist">Work records checklist</Link><Link href="/us-independent-worker-records">United States</Link><Link href="/singapore-work-records">Singapore</Link><a href={PLAY_URL} target="_blank" rel="noreferrer">Google Play</a></div>
+  <div className="footlinks" style={{flexWrap:'wrap'}}><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/contact">Support</Link><Link href="/work-hours-pay-records-checklist">Work records checklist</Link><Link href="/us-independent-worker-records">United States</Link><Link href="/singapore-work-records">Singapore</Link><a href={PLAY_URL} target="_blank" rel="noreferrer">Google Play</a></div>
 </div></footer>}
 export function Shell({children}){return <><Header/>{children}<Footer/></>}
 export function PlayButton(){return <a className="btn primary" href={PLAY_URL} target="_blank" rel="noreferrer">Get DISPUTE on Google Play</a>}

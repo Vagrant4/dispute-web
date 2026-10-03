@@ -15,7 +15,7 @@ export default function WorkRecordsGuide(){return <Shell><main className="wrap l
     <p>This checklist works for personal shift records and freelance projects. DISPUTE can organize your own time entries, optional location, photos and notes, and export project-specific PDF or CSV reports.</p>
     <nav className="callout" aria-label="Guide contents"><b>In this guide</b><a className="textlink" href="#daily-checklist">1. Record the workday</a><a className="textlink" href="#review-period">2. Match the review period</a><a className="textlink" href="#check-differences">3. Check differences</a><a className="textlink" href="#export-records">4. Export and keep a backup</a></nav>
 
-    <section id="daily-checklist">
+    <section style={{scrollMarginTop:96}} id="daily-checklist">
       <h2>1. Use a short daily work-hours checklist</h2>
       <p>Make the entry close to the time the work happens. Check these details before moving on to the next day:</p>
       <ul>
@@ -29,7 +29,7 @@ export default function WorkRecordsGuide(){return <Shell><main className="wrap l
       <p>In DISPUTE, use the project and Time In / Time Out workflow or a manual work entry. Location is optional. Use notes for context that a time entry alone cannot explain; this checklist does not assume a separate break-tracking or payroll-approval feature. See <a className="textlink" href="/how-it-works">how DISPUTE works</a>.</p>
     </section>
 
-    <section id="review-period">
+    <section style={{scrollMarginTop:96}} id="review-period">
       <h2>2. Match the dates before comparing totals</h2>
       <p>A payment date and the period it covers may be different. Read the start and end dates on the statement or invoice, then select the matching project and dates in your own records. Keep another job or an earlier unpaid invoice out of that comparison.</p>
       <ol>
@@ -42,7 +42,7 @@ export default function WorkRecordsGuide(){return <Shell><main className="wrap l
       <p>If your work is priced per task or at a fixed project fee, a time-based estimate alone will not reproduce that agreement. Review the scope, milestones and invoice separately rather than forcing them into an hourly comparison.</p>
     </section>
 
-    <section id="check-differences">
+    <section style={{scrollMarginTop:96}} id="check-differences">
       <h2>3. Make a clear list of anything that differs</h2>
       <p>A difference is a prompt to check the inputs. It is not proof that a client or employer has made an error. Work through one date or item at a time:</p>
       <ul>
@@ -55,7 +55,7 @@ export default function WorkRecordsGuide(){return <Shell><main className="wrap l
       <div className="warning"><b>Personal review, not a payroll determination</b><span>DISPUTE estimates depend on your entries and settings. The app does not establish what anyone legally owes, certify payroll or replace legal, accounting or regulatory advice. Keep original statements, agreements and payment records alongside your work log.</span></div>
     </section>
 
-    <section id="export-records">
+    <section style={{scrollMarginTop:96}} id="export-records">
       <h2>4. Review the report and keep a separate backup</h2>
       <p>Before sharing, select the correct project and date range, then open the exported report and check the entries. DISPUTE supports PDF and CSV exports: PDF is useful for reading a report; CSV lets you inspect the records in a spreadsheet.</p>
       <p>Keep the original export if you make a separate edited spreadsheet. Give saved files a clear project and date-range name, and store them somewhere you can find again. Avoid including unrelated photos, another person's details or confidential site information.</p>
