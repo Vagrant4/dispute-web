@@ -1,2 +1,1 @@
-export default function sitemap(){const b='https://disputewho.com';return ['','/how-it-works','/features','/pricing','/privacy','/terms','/contact','/us-independent-worker-records','/singapore-work-records','/work-hours-pay-records-checklist'].map(p=>({url:b+p}))}
-
+export default function sitemap(){const b='https://disputewho.com';return ['','/how-it-works','/features','/pricing','/privacy','/terms','/contact','/us-independent-worker-records','/singapore-work-records','/work-hours-pay-records-checklist','/work-hours-tracker','/salary-tracker','/freelancer-work-log','/contractor-proof-of-work','/overtime-tracker','/pay-discrepancy-tracker'].map(p=>({url:b+p}))}
